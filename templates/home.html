@@ -1,0 +1,44 @@
+<html>
+<body>
+<br>
+<h4>Three most popular articles of all time</h4> 
+<br>
+<br>
+{%for row in rows %}
+-
+ {% for d in row %}
+   {{ d }}  
+ {% endfor %}
+ views
+<br>
+{% endfor %}
+<br>
+<br>
+<br>
+<h4>Most popular article authors of all time</h4>
+<br>
+<br>
+{% for row in visits %}
+  {% for d in row %}
+    {{ d }}
+  {% endfor %}
+views
+<br>
+{% endfor %}
+<br>
+<br>
+<h4>On these days more than 1% of requests lead to error</h4>
+<br>
+<br>
+<br>
+{% for erro in error %}
+  {% for d in erro %}
+    {{ d }}
+  {% endfor %}
+% errors
+<br>
+{% endfor %}
+ 
+
+</body>
+</html>
